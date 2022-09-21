@@ -1,0 +1,695 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+header, main, .footer-list {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  min-width: 100px;
+  width: 20%;
+  height: 50%;
+  margin: 0 25px
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 35px;
+}
+
+.header-nav a:hover {
+  color: #0065FC;
+  border-top: solid 2px #0065FC;
+  padding: 35px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0 0 5px 25px;
+}
+
+.header-text {
+  margin-left: 25px;
+}
+
+.search-bar {
+  display: flex;
+  margin-left: 25px;
+  margin-bottom: 30px;
+}
+
+.search-bar .fa-map-marker-alt {
+  border-radius: 10px 0 0 10px;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120%;
+}
+
+.search-bar input {
+  height: 50px;
+  width: 250px;
+  border: solid 1px #f2f2f2;
+  font-size: 130%;
+  font-weight: 700;
+}
+
+.search-bar input::placeholder {
+  color: black;
+  padding-left: 20px;
+
+}
+
+.search-button {
+  background-color: #0065FC;
+  border: solid 1px #f2f2f2;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  font-weight: 600;
+}
+
+.search-bar .fa-magnifying-glass {
+  display: none;
+}
+
+.filters {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  margin: 30px 0 10px 25px;
+  flex-wrap: wrap;
+}
+
+.filters-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 20px 20px 20px 0;
+}
+
+.filters div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-right: 30px;
+  border: solid 2px #f2f2f2;
+  border-radius: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.filters div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.filters i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #DEEBFF;
+  color: #0065FC;
+  margin-left: -4px;
+}
+
+.filters div:hover {
+  background-color: #0065FC;
+  scale: 1.10;
+}
+
+.information {
+  display: flex;
+  margin: 0 25px;
+  align-items: center;
+
+}
+
+.information .fa-info {
+  border: solid 2px #f2f2f2;
+  border-radius: 50%;
+  color: #0065fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  font-size: 80%;
+}
+
+
+.information p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.first-bloc {
+  display: flex;
+  margin: 30px 0 0 25px;
+  height: auto;
+
+}
+
+.accommodations {
+  margin-right: 30px;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: auto;
+  padding-right: 25px;
+}
+
+.accommodations-title {
+  margin-left: 30px;
+}
+
+.accommodations-list {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.accommodations .card {
+  margin: 10px 0 30px 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.accommodations .card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  padding: 4px;
+}
+
+.accommodations .card h3 {
+  margin: 5px 0 5px 10px;
+  font-size: 16px;
+}
+
+.accommodations .card p {
+  margin: 5px 0 5px 10px;
+  font-size: 14px;
+}
+
+.accommodations .card .stars {
+  margin: 5px 0 5px 10px;
+  font-size: 14px;
+}
+
+.colorblue {
+  color: #0065FC;
+}
+
+.colorgrey {
+  color: grey;
+}
+
+.colorblack {
+  color: #000;
+  font-size: 25px;
+
+}
+
+.more p {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 25px;
+}
+
+.popular {
+  width: 35%;
+  height: auto;
+  background-color: #f2f2f2;
+  margin-right: 25px;
+  border-radius: 25px;
+  padding: 0 25px;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.popular-header i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular .card {
+  border-radius: 15px;
+  height: auto;
+  width: auto;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.popular .card img {
+  width: 35%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  padding: 4px;
+}
+
+.popular .card .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popular .card h3 {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.popular .card p {
+  margin: 0 0 5px 5px;
+  font-size: 14px;
+}
+
+.popular .card .stars {
+  margin: 0 0 5px 5px;
+  font-size: 18px;
+}
+
+.activities {
+  width: 100%;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.activities-title {
+  margin-left: 25px;
+}
+
+.activities-list {
+  height: 500px;
+}
+
+.activities-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
+  grid-template-areas:
+    "vieux-port pomegues calanques dame-garde"
+    "vieux-port pomegues calanques longchamps"
+    "vieux-port pomegues calanques longchamps"
+    "vieux-port frioul calanques longchamps";
+}
+
+.vieux-port {
+  grid-area: vieux-port;
+}
+
+.pomegues {
+  grid-area: pomegues;
+}
+
+.frioul {
+  grid-area: frioul;
+}
+
+.calanques {
+  grid-area: calanques;
+}
+
+.dame-garde {
+  grid-area: dame-garde;
+}
+
+.longchamps {
+  grid-area: longchamps;
+}
+
+.activities-list .card {
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.activities-list .card img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  padding: 4px;
+}
+
+.activities-list .card h3 {
+  height: 10%;
+  margin: 5px 0 0 10px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 70px;
+  background-color: #f2f2f2;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;}
+
+.footer-section h4 {
+  font-size: 20px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .header-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 45px;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-nav a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-bottom: solid 3px #f2f2f2;
+
+  }
+
+  .header-nav a:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065FC;
+    border-collapse: collapse;
+  }
+
+  .header-title {
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 20px;
+  }
+
+  .search-bar {
+    margin-top: 15px;
+  }
+
+  .search-bar input {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    display: none;
+  }
+
+  .search-bar .fa-magnifying-glass {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0065FC;
+    color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+  }
+
+  .filters {
+    margin-left: 25px;
+  }
+
+  .first-bloc {
+    flex-direction: column-reverse;
+  }
+
+  .accommodations {
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+
+  .accommodations-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+
+  .popular {
+    height: auto;
+    width: auto;
+    margin-right: 25px;
+  }
+
+  .popular .card {
+    width: auto;
+    margin-right: 25px;
+  }
+
+  .popular .card h3 {
+    margin-bottom: 5px;
+  }
+
+  .popular .card img {
+    height: auto;
+    max-height: 150px;
+
+  }
+
+  .activities {
+    height: auto;
+  }
+
+  .activities-list {
+    height: fit-content;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "vieux-port pomegues frioul"
+      "calanques dame-garde longchamps";
+  }
+
+  .activities-list .card {
+    width: auto;
+    height: 250px;
+  }
+
+  .activities-list .card img {
+    height: 85%;
+  }
+
+  .activities-list .card h3 {
+    height: 10%;
+  }
+
+  .footer-section {
+    margin-right: 150px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .header-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 45px;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-nav a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    border-bottom: solid 3px #f2f2f2;
+
+  }
+
+  .header-nav a:hover {
+    border-top: none;
+    border-bottom: solid 3px #0065FC;
+    border-collapse: collapse;
+  }
+
+  .header-title {
+    font-size: 21px;
+    font-weight: 800;
+    margin-top: 20px;
+  }
+
+  .search-bar {
+    margin-top: 15px;
+  }
+
+  .search-bar input {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .search-bar button {
+    display: none;
+  }
+
+  .search-bar .fa-magnifying-glass {
+    border-radius: 10px 10px 10px 10px;
+    background-color: #0065FC;
+    color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+
+  }
+
+  .first-bloc {
+    flex-direction: column-reverse;
+  }
+
+  .accommodations {
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+
+  .accommodations-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .popular {
+    width: auto;
+    margin-right: 25px;
+  }
+
+  .popular .card {
+    max-height: 150px;
+
+  }
+
+  .popular .card h3 {
+    font-size: 12px;
+  }
+
+  .activities-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "vieux-port"
+      "pomegues"
+      "frioul"
+      "calanques"
+      "dame-garde"
+      "longchamps";
+  }
+
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 0 25px;
+  }
+
+}

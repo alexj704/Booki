@@ -3,11 +3,6 @@
   box-sizing: border-box;
 }
 
-.footer-list a {
-  text-decoration: none;
-  color: inherit;
-}
-
 a:visited {
   color: inherit;
 }
@@ -296,7 +291,7 @@ main,
 
 .popular .card {
   border-radius: 15px;
-  height: auto;
+  height: 140px;
   width: auto;
   display: flex;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -313,13 +308,26 @@ main,
   padding: 4px;
 }
 
+.popular .card .name-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .popular .card .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.popular-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
 .popular .card h3 {
+  margin: 0;
   padding: 5px;
   font-size: 16px;
 }
@@ -414,8 +422,16 @@ footer {
 
 .footer-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.footer-section {
+  margin-right: 200px;
   padding: 0 25px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-section h4 {
@@ -529,6 +545,11 @@ footer {
   .popular .card {
     width: auto;
     margin-right: 25px;
+  }
+
+  .popular-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
   }
 
   .popular .card h3 {
@@ -665,6 +686,11 @@ footer {
   .popular {
     width: auto;
     margin-right: 25px;
+  }
+
+  .popular-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
   }
 
   .popular .card {

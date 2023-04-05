@@ -15,8 +15,6 @@ Pour visualiser le site, [cliquez ici](https://alexj704.github.io/booki/).
 - Visual Studio Code
 - HTML
 - CSS
-- SASS
-- Vite.js
 
 ## Auteurs
 
